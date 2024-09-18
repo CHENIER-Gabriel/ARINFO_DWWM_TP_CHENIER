@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html> lang=" fr"
+    <head>
+        <meta charset="UTF-8">
+        <!-- Forcer la compatibilité IE-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <LINK href="header-styles.css" rel="stylesheet" type="text/css">
+        <LINK href="styles.css" rel="stylesheet" type="text/css">
+        <LINK href="timetable.css" rel="stylesheet" type="text/css">
+        <LINK href="footer-styles.css" rel="stylesheet" type="text/css">      
+        <title>Contactez-nous</title>
+    </head>
+    <body>
+        <!--Headerstart-->
+        <!--Menu-->
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="le-perigord.html">Le Périgord</a></li>
+                    <li><a href="notre-gite.html">Notre Gîte</a></li>
+                    <li><a href="nouscontacter.html">Contact</a></li>
+                </ul>
+            </nav>
+        <!--Bodystart-->
+        <!--Video-->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/2ZpvQd2izOs" title="Visiter le Périgord Noir en Dordogne" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <!--Coords-->        
+                <h2>Coordonnées</h2>
+                    <table>
+                        <tr>
+                            <td>Adresse</td>
+                            <td>Magnac, 24470 Milhac-de-Nontron</td>
+                        </tr>
+                        <tr>
+                            <td>Téléphone</td>
+                            <td>0689903108</td>
+                        </tr>
+                        <tr>
+                            <td>Mail</td>
+                            <td>domaine@gîteperigord.fr</td>
+                        </tr>
+                    </table>
+        <!--Timetable-->
+                <h2>Horaires</h2>
+                    <table class="timetable">
+                        <tr>
+                            <th>Lundi</th>
+                            <th>Mardi</th>
+                            <th>Mercredi</th>
+                            <th>Jeudi</th>
+                            <th>Vendredi</th>
+                            <th>Samedi</th>
+                            <th>Dimanche</th>
+                        </tr>
+                        <tr>
+                            <td>Fermé</td>
+                            <td>9h00 - 15h00</td>
+                            <td>9h00 - 15h00</td>
+                            <td>9h00 - 15h00</td>
+                            <td>9h00 - 15h00</td>
+                            <td>9h00 - 15h00</td>
+                            <td>9h00 - 15h00</td>
+                        </tr>
+                        <tr>
+                            <td>Fermé</td>
+                            <td>17h30 - 23h30</td>
+                            <td>17h30 - 23h30</td>
+                            <td>17h30 - 23h30</td>
+                            <td>17h30 - 23h30</td>
+                            <td>17h30 - 23h30</td>
+                            <td>17h30 - 20h00</td>
+                        </tr> 
+                    </table>
+        <!--Forms-->            
+                    <form action="ajouter.php" method="post">
+                        <fieldset>
+                            <legend>Contactez-nous !</legend>
+                            <ul>
+                                <li>
+                                    <input type="text" placeholder="Nom" required>
+                                </li>
+                            <br>
+                                <li>
+                                    <input type="text" placeholder="Prénom" required>
+                                </li>
+                            <br>
+                                <li>
+                                    <input type="tel" placeholder="Numéro de téléphone" required>
+                                </li>
+                            <br>
+                                <li>
+                                    <input type="mail" placeholder="Email de l'utilisateur" required>
+                                </li>
+                            <br>
+                                <li>
+                                    <textarea name="Votre Message" rows="10" cols="30">Votre Message</textarea>
+                                </li>
+                            <br>
+                                <button type ="submit">Envoyer</button>
+                            </ul>
+                        </fieldset>
+                    </form>
+            <!--Pictures-->        
+                    <img src="images/paysage-gauche.png" alt="Chateau en surplomb de la Dordogne" style="width:300px;height:300px;">
+                    <img src="images/carte-dordogne.jpg" alt="Carte de la Dordogne" style="width:300px;height:300px;">
+                    <img src="images/paysage-droit.jpg" alt="Port fluvial périgourdin" style="width:300px;height:300px;">
+                </body>
+            <!--Footerstart-->    
+                <footer class="footer">
+            <!--Linkblock-->        
+                    <div class="footer-content">
+                        <a href="https://www.guide-du-perigord.com/fr/tourisme/decouvrir/visite-du-perigord/le-perigord-noir.html" target="_blank" class="footer-link">
+                            Copyright 2019 – lien vers le guide
+                        </a>
+                    </div>
+                </footer>

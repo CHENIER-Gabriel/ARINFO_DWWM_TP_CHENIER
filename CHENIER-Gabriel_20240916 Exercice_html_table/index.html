@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html> lang=" fr"
+    <head>
+        <LINK href="styles.css" rel="stylesheet" type="text/css">
+        <meta charset="UTF-8">
+        <!-- Forcer la compatibilité IE-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Tableau de produits</title>
+    </head>
+
+<body>
+    <h1 style="text-align:center">Tableau de produits</h1>
+        <table>
+            <tr>
+                <th>Nom du produit</th>
+                <th>Prix</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>Moulinet Carpe Daiwa Black Widow Carp</td>
+                <td>69,90€</td>
+                <td>Le moulinet Black Widow Carp est parfait pour les carpistes à la recherche d’un produit fiable , performant et au prix contenu. Sa bobine à large capacité offre la possibilité de pêcher loin du bord et d’emmagasiner une grande quantité de ligne pour les pêches en lac.</td>
+            </tr>    
+            </tr>
+                <td rowspan="2">Float Tube Gunki Squad</td>
+                <td rowspan="2">219€</td>
+                <td>La Squad Gunki a reçu le Pecheur Awards Navigation 2023 du petit float tube à chambres à air pour débuter et découvrir de nouveaux spots sur des parcours de pêche que j'arpente depuis des années...</td>
+                <tr><td>Version US ou FR</td></tr>
+            </tr>
+            <tr>
+                <td>Canne Spinning Major Craft Basspara X</td>
+                <td>89,90€</td>
+                <td>Avec son look stylé, sa poignée EVA, son blank la série Basspara ne passe pas inaperçue. Les Basspara sont à la fois fines, sensibles, rapides, elles permettent d’accéder à toutes les pêches techniques qu’il s’agisse de magner en finesse des petits leurres souples ou des gros swimbait, il y aura une Basspara pour faire face à toutes les situations.</td>
+            
+            </tr>
+        </table>
+        <form action="ajouter.php" target="_blank" method="get">
+            <fieldset>
+                <legend>Formulaire de test</legend>
+                <input type="text" placeholder="Nom" required>
+                <input type="text" placeholder="Prénom" required>
+                <input type="text" placeholder="Adresse mail" required>
+                <input type="text" placeholder="Votre message" required>
+                    <div> 
+                        <input type="checkbox" name="condition" id="condition" checked>
+                        <label for="condition">Veuillez accepter</label>
+                    </div>
+                <input type="file" accept="pdf,jpeg">
+                <select name="Selection" id="">
+                    <option value="Contact">Contact</option>
+                    <option value="Recrutement">Recrutement</option>
+                    <option value="Autres">Autres</option>
+                </select>
+                <button type ="submit">Envoyer</button>
+                <input type="reset" value="Réinitialiser le formulaire"
+            </fieldset>
+</form>
+</body>

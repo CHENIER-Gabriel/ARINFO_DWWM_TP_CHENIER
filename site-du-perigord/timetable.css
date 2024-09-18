@@ -1,0 +1,20 @@
+/* Cibler uniquement la table de la section Horaires */
+.timetable {
+    border-collapse: collapse;
+    width: 80%; /* Largeur du tableau pour un bon centrage */
+    margin: 20px auto; /* Centrer le tableau et ajouter un espacement vertical */
+}
+
+/* Style des cellules de la table (td et th) */
+.timetable th, 
+.timetable td {
+    border: 1px solid black; /* Applique une bordure aux cellules */
+    padding: 8px; /* Ajoute un peu d'espace intérieur aux cellules */
+    text-align: center; /* Centrer le texte dans les cellules */
+    min-width: 120px; /* Réduit la largeur minimale des cellules à 110px */
+}
+
+/* Appliquer un style spécifique aux en-têtes */
+.timetable th {
+    background-color: #f2f2f2; /* Couleur de fond des en-têtes */
+}

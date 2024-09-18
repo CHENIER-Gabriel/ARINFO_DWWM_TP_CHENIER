@@ -1,0 +1,86 @@
+
+/* Style global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+h2 {
+    text-align: center;
+    color: #444;
+}
+
+/* Centrage de l'iframe */
+iframe {
+    display: block;
+    margin: 20px auto; /* Centrage horizontal de l'iframe */
+    border: none;
+}
+
+/* Formulaire */
+form {
+    width: 60%;
+    margin: 30px auto;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 15px; /* Bord plus arrondi pour le formulaire */
+}
+
+form fieldset {
+    border: none;
+    padding: 0;
+}
+
+form legend {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+form li {
+    margin-bottom: 10px;
+}
+
+/* Entrées du formulaire plus arrondies */
+form input, 
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px; /* Bordures plus arrondies pour les champs */
+    box-sizing: border-box;
+}
+
+/* Bouton plus arrondi */
+form button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px; /* Bordure plus arrondie pour le bouton */
+    cursor: pointer;
+    display: block;
+    width: 100%;
+}
+
+form button:hover {
+    background-color: #575757;
+}
+
+/* Style des images */
+img {
+    justify-content: center;
+    border-radius: 10px;
+    margin-left: 140px;
+    margin-right: 140px;
+    background-color: #444;
+}

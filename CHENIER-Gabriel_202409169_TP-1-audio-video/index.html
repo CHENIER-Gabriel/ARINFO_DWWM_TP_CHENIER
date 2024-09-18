@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html> lang=" fr"
+    <head>
+        <meta charset="UTF-8">
+        <!-- Forcer la compatibilité IE-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Ajout de musique et de vidéo </title>
+    </head>
+
+    <body>
+        <!--Titre de la page-->
+        <h1>Ajout de musique et vidéo</h1>
+        <!--Section 1 : sous-titres "Musique"-->
+            <h2>Musique</h2>
+                <audio controls>
+                    <source src="ressources/music/jasmin.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+        <!-- fallback pour les navigateurs qui ne supportent pas mp3 -->
+                    <source src="ressources/music/jasmin.ogg" type="audio/ogg">
+                </audio>
+        <!-- Crédits audios-->        
+                <p>
+                    Musique libre de droits
+                </p>
+        <!--Section 2 : sous-titres "Vidéo"-->        
+            <h2>Vidéo</h2>
+        <!--Dimensions-->
+                <video width="320" height="240" controls>
+                    <source src="ressources/video/ui-design.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                </video>
+        <!--Crédits Vidéos-->
+                <p>
+                    Video gratuite de
+                    <a href=https//www.laurent-gallen.com target="_blank">Laurent Gallen</a>.
+                </p>
+                    
+    </body>
