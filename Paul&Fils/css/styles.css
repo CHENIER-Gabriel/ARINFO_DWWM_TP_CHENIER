@@ -1,0 +1,529 @@
+/*HEADER*/
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(248, 248, 248);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+}
+
+header img {
+    width: auto;
+    height: 60px;
+    flex-basis: 5%;
+}
+
+nav.menu {
+    flex-basis: 45%;
+}
+
+.contactlink {
+    display: flex;
+    flex-basis: 20%;
+    background-color: #ee8801;
+    justify-content: center;
+    align-content: center;
+    padding-top: 21px;
+    padding-bottom: 21px;
+}
+
+nav.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+}
+
+nav.menu ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav.menu ul li a:hover {
+    color: #ee8801;
+}
+
+.contactlink a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.contactlink a:hover {
+    color: white;
+}
+
+/*BODY MAINS*/
+
+.pageMid{
+    margin:40px;
+}
+
+h1{
+    font-family: 'Roboto', Bold 700;
+    font-size: 40px;
+    color: white;
+}
+
+h2{
+    font-family: 'Roboto', Bold 700;
+    font-size: 32px;
+    color: white;
+}
+
+h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+
+h4{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+
+h6{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: white;
+    display: flex;
+    justify-content: left;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+/*BODY - HERO PAGE*/
+.hero {
+    font-family: 'Roboto', sans-serif;
+    height: 35vh;
+    display: flex;
+    margin: 0;
+    justify-content: left;
+    background-image: url('../assets/images/homme-carton-camionnette.webp');
+    background-repeat: no-repeat;
+    background-position: 80%;
+    background-size: cover
+}
+
+.hero-content {
+    font-family: 'Roboto', sans-serif;
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5%;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    width: 300px;
+    font-size: 12px;
+    text-align: start;
+}
+
+.button1 {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    flex-basis: 50%;
+    padding: 15px;
+}
+
+.button1:hover {
+    background-color: white;
+    color: #ee8801;
+}
+
+.button2 {
+    background-color: #ee8801;
+    color: black;
+    text-decoration: none;
+    flex-basis: 50%;
+    padding: 15px;
+}
+
+.button2:hover {
+    background-color: white;
+    color: #ee8801;
+    text-decoration: none;
+}
+
+/*BODY-CONTAINER 1*/
+
+.container1-index {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: row;
+    height: 35vh;
+}
+
+.container1Text{
+    display: flex;
+    flex-direction: column;
+    background-color: #ee8801;
+    width: 40%;
+    align-items: right;
+    justify-content: center;
+    padding: 5%;
+}
+
+.container1Img {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    background-image: url(../assets/images/ho——e-porte-carton.webp);
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.container1Button {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    width: 300px;
+    font-size: 12px;
+    text-align: start;
+    align-items: center;
+}
+
+.container1Button1 {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    flex-basis: 40%;
+    text-align: center;
+    height: 15px;
+    padding: 5px;
+}
+
+.container1Button1:hover {
+    background-color: #ee8801;
+    color: black;
+}
+
+/*BODY ARTICLE*/
+
+.container2-index {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 55vh;
+}
+
+/*REACTIVE*/
+
+@media (min-width: 820px) {
+    .container2-index {
+        height: 62vh;
+}
+}
+
+@media (min-width: 1080px) {
+    .container2-index {
+        height: 65vh;
+    }
+}
+
+/*FIN REACTIVE ARTICLES*/
+
+
+.container2-article1{
+    display: grid;
+    grid-template-rows: 20vh 15% 30% 5%;
+    padding: 10px;
+}
+
+.container2-article1img{
+    background-image: url(../assets/images/2hommes-camionnette.webp);
+    background-repeat: no-repeat;
+    background-position: 60%;
+}
+
+.container2-article2{
+    display: grid;
+    grid-template-rows: 20vh 15% 30% 5%;
+    padding: 10px;
+
+}
+
+.container2-article2img{
+    background-image: url(../assets/images/camionnette.webp);
+    background-repeat: no-repeat;
+    background-position: 60%;
+}
+
+.container2-article3{
+    display: grid;
+    grid-template-rows: 20vh 15% 30% 5%;
+    padding: 10px;
+
+}
+
+.container2-article3img{
+    background-image: url(../assets/images/garage.webp);
+    background-repeat: no-repeat;
+    background-position: 60%;
+}
+
+.container2-article4{
+    display: grid;
+    grid-template-rows: 20vh 15% 30% auto;
+    padding: 10px;
+}
+
+.container2-article4img{
+    background-image: url(../assets/images/carton.webp);
+    background-repeat: no-repeat;
+    background-position: 60%;
+}
+
+.container2Button {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    width: 150px;
+    font-size: 12px;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.container2Button {
+    background-color: #ee8801;
+    color: black;
+    width: 50px;
+    height: 10px;
+    padding: 10px;
+}
+
+.container2Button:hover {
+    background-color: #ee8801;
+    color: black;
+}
+
+/*BODY-container3*/
+
+.container3 {
+    height: 40vh;
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+}
+
+
+.container3img {
+    background-image: url(../assets/images/2hommes-portent-un-meuble.webp); 
+    background-position: 80% 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+}
+
+.container3text {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 1vh;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.container3bloc1 {
+    display: flex;
+    color: white;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    padding: 15%;
+}
+
+.container3bloc2 {
+    display: flex;
+    color: white;
+    background-color: #ee8801;
+    justify-content: center;
+    align-items: center;
+    padding: 15%;
+}
+
+.container3bloc3 {
+    display: flex;
+    color: black;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 15%;
+}
+
+/*BODY CONTAINER 4*/
+
+.container4 {
+    margin-top: 10%;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+
+
+.container4bloc {
+    padding-left: 40%;
+    padding-right: 40%;
+}
+
+.sponsors {
+    display: flex;
+    justify-content: space-evenly;
+    height: 4vh;
+}
+
+/*REACTIVE*/
+
+@media (min-width: 820px) {
+    .sponsors {
+        height: 8vh;
+}
+}
+
+@media (min-width: 1080px) {
+    .sponsors {
+        height: 12vh;
+    }
+}
+
+/*FIN REACTIVE container4*/
+
+/*BODY QUOTEFORM*/
+
+.container-formquote {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: row;
+    background-color: #ee8801;
+
+}
+
+.formDescription {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    justify-content: right;
+    padding-left:20%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.formContainer {
+    height: 20vh;
+    padding: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    justify-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.submitButton {
+    grid-column: span 2;
+    width: 100%;
+    color: white;
+    background-color: black;
+    padding: 5%;
+    border: none;
+}
+
+input {
+    height: 2vh;
+    width: 12vw;
+}
+
+select {
+    height: 2vh;
+    width: 12vw;
+}
+
+/*REACTIVE*/
+
+@media (min-width: 820px) {
+    .formContainer {
+        height: 25vh;
+}
+    input, select {
+        height: 4vh;
+        width: 16vw;
+    }
+}
+
+@media (min-width: 1080px) {
+    .formContainer {
+        height: 30vh;
+    }
+    input, select {
+        height: 6vh;
+        width: 16vw;
+    }
+}
+
+/*FIN REACTIVE FORM*/
+
+/*FOOTER*/
+footer {
+    height: 10 vh;
+    background-color: black;
+    color: white;
+    padding-left: 80px;
+    padding-right: 80px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.footer1, .footer2, .footer3, .footer4{
+    display: flex;
+    flex-flow: column;
+}
+
+.footer1 {
+    justify-content: space-between;
+}
+
+.footer2-1, .footer2-2 {
+    justify-content: space-around;
+}
+
+.logoPaul {
+    width: 100px;
+}
+
+.footerSocialIcons {
+    margin-top: 15px;
+}
+
+.icon1, .icon2, .icon3, .icon4 {
+    width: 30px;
+    background-color: antiquewhite;
+    margin: 5px;
+}

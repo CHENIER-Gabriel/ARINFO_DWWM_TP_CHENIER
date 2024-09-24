@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="120"
+   height="120"
+   viewBox="0 0 120 120"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="Logo-1.svg"
+   inkscape:export-filename="Logo-1.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="px"
+     inkscape:zoom="4.8377889"
+     inkscape:cx="59.944741"
+     inkscape:cy="48.369204"
+     inkscape:window-width="1419"
+     inkscape:window-height="1040"
+     inkscape:window-x="501"
+     inkscape:window-y="63"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <rect
+       x="68.626393"
+       y="37.000374"
+       width="42.37473"
+       height="51.056382"
+       id="rect2" />
+  </defs>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#ff6b00;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:100;stroke-dasharray:none"
+       id="rect1"
+       width="25"
+       height="25"
+       x="40"
+       y="35.41341" />
+    <rect
+       style="fill:#be4c00;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:100;stroke-dasharray:none"
+       id="rect1-7"
+       width="25"
+       height="25"
+       x="40"
+       y="60.41341" />
+    <rect
+       style="fill:#7c3100;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:100;stroke-dasharray:none"
+       id="rect1-7-8"
+       width="25"
+       height="25"
+       x="15"
+       y="60.41341" />
+    <text
+       xml:space="preserve"
+       id="text1"
+       style="font-size:16px;line-height:1;white-space:pre;shape-inside:url(#rect2);display:inline;fill:#be4c00;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:100;stroke-dasharray:none"
+       transform="translate(1.860354,-0.41341201)"><tspan
+         x="68.626953"
+         y="49.585848"
+         id="tspan3"><tspan
+           style="font-family:'Franklin Gothic Medium';-inkscape-font-specification:'Franklin Gothic Medium, ';fill:#ffffff"
+           id="tspan1">Paul
+</tspan></tspan><tspan
+         x="68.626953"
+         y="66.015443"
+         id="tspan5"><tspan
+           style="font-family:'Franklin Gothic Medium';-inkscape-font-specification:'Franklin Gothic Medium, ';fill:#ffffff"
+           id="tspan4">et
+</tspan></tspan><tspan
+         x="68.626953"
+         y="82.445039"
+         id="tspan7"><tspan
+           style="font-family:'Franklin Gothic Medium';-inkscape-font-specification:'Franklin Gothic Medium, ';fill:#ffffff"
+           id="tspan6">Fils</tspan></tspan></text>
+  </g>
+</svg>
