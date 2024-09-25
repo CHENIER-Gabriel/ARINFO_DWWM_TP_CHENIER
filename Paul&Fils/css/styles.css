@@ -21,6 +21,13 @@ header img {
     flex-basis: 5%;
 }
 
+@media (min-width: 1080px) {
+    header img {
+        height: 
+        9vh;
+    }
+}
+
 nav.menu {
     flex-basis: 45%;
 }
@@ -33,6 +40,13 @@ nav.menu {
     align-content: center;
     padding-top: 21px;
     padding-bottom: 21px;
+}
+
+@media (min-width: 1080px) {
+    .contactlink {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
 }
 
 nav.menu ul {
@@ -122,6 +136,13 @@ p {
     background-size: cover
 }
 
+@media (min-width: 1080px) {
+    .hero {
+        height: 
+        75vh;
+    }
+}
+
 .hero-content {
     font-family: 'Roboto', sans-serif;
     width: 45vw;
@@ -174,6 +195,12 @@ p {
     display: flex;
     flex-direction: row;
     height: 35vh;
+}
+
+@media (min-width: 1080px) {
+    .container1-index {
+    height: 60vh;
+    }
 }
 
 .container1Text{
@@ -235,13 +262,13 @@ p {
 
 @media (min-width: 820px) {
     .container2-index {
-        height: 62vh;
+        height: 65vh;
 }
 }
 
 @media (min-width: 1080px) {
     .container2-index {
-        height: 65vh;
+        height: 70vh;
     }
 }
 

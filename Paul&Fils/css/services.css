@@ -21,6 +21,14 @@ header img {
     flex-basis: 5%;
 }
 
+@media (min-width: 1080px) {
+    header img {
+        height: 
+        9vh;
+    }
+}
+
+
 nav.menu {
     flex-basis: 45%;
 }
@@ -34,6 +42,14 @@ nav.menu {
     padding-top: 21px;
     padding-bottom: 21px;
 }
+
+@media (min-width: 1080px) {
+    .contactlink {
+        padding-top: 34px;
+        padding-bottom: 34px;
+    }
+}
+
 
 nav.menu ul {
     list-style: none;
@@ -179,20 +195,20 @@ p {
     font-family: 'Roboto', sans-serif;
     display: grid;
     grid-template-columns: 50% 50%;
-    height: 60vh;
+    height: 55vh;
 }
 
 /*REACTIVE*/
 
 @media (min-width: 820px) {
     .container2-index {
-        height: 62vh;
+        height: 65vh;
 }
 }
 
 @media (min-width: 1080px) {
     .container2-index {
-        height: 65vh;
+        height: 75vh;
     }
 }
 
