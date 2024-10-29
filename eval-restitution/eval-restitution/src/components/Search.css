@@ -1,0 +1,20 @@
+/* General container for the search component */
+.Search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Container for the search input and icon */
+.search-container {
+    display: flex;
+    flex-direction: row; /* Arranges icon and input side by side */
+    align-items: center; /* Vertically centers items */
+}
+
+/* Styles for the search icon */
+.search-icon {
+    color: black; /* Sets icon color */
+    height: 50px; /* Controls icon size */
+}

@@ -1,0 +1,78 @@
+/* Import the "Michroma" font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+
+/* Apply "Michroma" font to the entire body, with a sans-serif fallback */
+body {
+  font-family: 'Michroma', sans-serif;
+}
+
+/* Layout for the "tools" container */
+.tools {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  grid-template-areas:
+    "title navbar"; /* Define grid areas for title and navbar */
+  align-items: center;
+  gap: 1vw; /* Gap between elements */
+}
+
+/* Define the title area in the grid */
+.tools label {
+  grid-area: title;
+}
+
+/* Define the navbar area in the grid */
+.tools input {
+  grid-area: navbar;
+  min-width: 160px; /* Minimum width for input */
+  margin-left: 1vw; /* Space to the left of input */
+}
+
+/* Style for images with the "img-thumbnail" class */
+.img-thumbnail { 
+  max-height: 200px; /* Limit image height */
+  object-fit: contain; /* Ensure image fits without distortion */
+}
+
+/* Scale effect when hovering over thumbnail images */
+.img-thumbnail:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Style for paragraphs within buttons with "btn-danger" class */
+.btn-danger p {
+  margin: 0; /* Remove default margin */
+  margin-left: 1vw; /* Add space on the left */
+}
+
+/* Primary style for "btn-danger" class */
+.btn-danger {
+  background-color: #FF5351; /* Button color */
+  border-color: #FF5351; /* Border color */
+}
+
+/* Scale effect and color consistency for "btn-danger" buttons on hover */
+.btn-danger:hover {
+  transform: scale(1.1); /* Enlarge on hover */
+  background-color: #FF5351;
+  border-color: #FF5351;
+}
+
+/* Hover effect for h5 headers inside "card-body" divs */
+.card-body div h5:hover {
+  transform: scale(1.1); /* Enlarge on hover */
+  color: green; /* Change color on hover */
+}
+
+/* Primary style for "btn-primary" class */
+.btn-primary {
+  background-color: grey; /* Button color */
+  border-color: grey; /* Border color */
+}
+
+/* Scale effect and color change for "btn-primary" buttons on hover */
+.btn-primary:hover {
+  transform: scale(1.2); /* Enlarge further on hover */
+  background-color: #FF5351; /* Change color on hover */
+  border-color: #FF5351;
+}
