@@ -1,0 +1,149 @@
+body {
+    margin:0;
+    padding:0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-family: "Michroma", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin:0;
+    padding: 1.5vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    color: white;
+    background-color: #bebebe;
+    border: solid 2px white;
+    border-radius: 15px;
+}
+
+h4{
+    font-family: "Michroma", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    margin:0;
+    padding: 1vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 12px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    gap: 2.5vh;
+}
+
+form input {
+    font-family: "Abel", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: medium;
+    margin: 0;
+    padding: 0;
+    height: 5vh;
+    width: 16vw;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 6px;
+    border: none;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+form button {
+    font-family: "Michroma", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: medium;
+    margin: 0;
+    padding: 0;
+    height: 5vh;
+    width: 10vw;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 6px;
+    color: white;
+    background-color: #bebebe;
+    border: solid 2px white;
+}
+
+form button:hover {
+    background-color: #9683ec;
+    color: white;
+    transform: scale(1.1);
+}
+
+.fond-animation {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    --s: 222px; /* control the size*/
+    --c1: #8b7ad6;
+    --c2: #7667bc;
+    --c3: #5e5298;
+    background:
+        repeating-conic-gradient(from 30deg,#0000 0 120deg,var(--c3) 0 50%) 
+        calc(var(--s)/2) calc(var(--s)*tan(30deg)/2),
+        repeating-conic-gradient(from 30deg,var(--c1) 0 60deg,var(--c2) 0 120deg,var(--c3) 0 50%);
+    background-size: var(--s) calc(var(--s)*tan(30deg));
+}
+
+.cercle {
+    width: 800px;
+    height: 800px;
+    margin: 0;
+    border-radius: 50%;
+    border: 10px dashed transparent;
+    border-top-color: #9683ec;
+    border-right-color: white;
+    border-bottom-color: #9683ec;
+    border-left-color: white;
+    animation: rotation 20s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+    transform: rotate(0deg);
+    }
+    to {
+    transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 768px) {
+    .cercle {
+        width: 320px;
+        height: 320px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2vh;
+    }
+
+    
+    form input  {
+        height: 5vh;
+        width: 35vw;
+    }
+
+    form button {
+        height: 5vh;
+        width: 35vw;
+    }
+}
