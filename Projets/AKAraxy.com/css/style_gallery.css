@@ -17,7 +17,7 @@ h4 {
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(20vw, 1fr));
-    gap: 5vh;
+    gap: 2.5vh;
     max-width: 100%;
     justify-items: center;
     margin-top: 5vh;

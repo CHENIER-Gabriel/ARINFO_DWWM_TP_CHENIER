@@ -725,10 +725,20 @@ p {
     /* Inclure le padding dans la largeur */
 }
 
+.akaraxybrandFooter a {
+    display: flex;
+    justify-content: center;
+    margin: 0.5em;
+}
+
+.footerContainer1 a {
+    text-decoration: none;
+}
+
 .footerContainer1 p {
-    margin: 1vh;
-    font-size: 40px;
-    color: #252525;
+    font-size: 25px;
+    color: #FFFFFF;
+    margin: 0;
 }
 
 .footerContainer p:hover {
@@ -737,9 +747,6 @@ p {
 
 /* Style du logo */
 .akaraxybrandFooter img {
-    display: flex;
-    align-items: center;
-    margin: 1em;
     padding: 0;
     height: 25%;
     max-width: 75%;
