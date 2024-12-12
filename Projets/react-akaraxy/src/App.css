@@ -1,0 +1,11 @@
+/* Import the "Michroma" font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+
+/* Apply "Michroma" font to the entire body, with a sans-serif fallback */
+body {
+  font-family: 'Michroma', sans-serif;
+}
+
+h1 {
+  font-family: 'Michroma', sans-serif;
+}

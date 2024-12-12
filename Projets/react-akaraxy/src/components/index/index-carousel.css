@@ -1,0 +1,30 @@
+.carousel {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+.carousel-track {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+.carousel-item {
+    flex: 0 0 auto;
+    width: 300px; /* Adjust as needed */
+    margin: 0 10px; /* Optional spacing */
+}
+.carousel-button {
+    background: none;
+    border: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.carousel-button.left {
+    left: 10px;
+}
+.carousel-button.right {
+    right: 10px;
+}

@@ -1,0 +1,87 @@
+h4 {
+    margin-top:10vh;
+    margin-bottom: 10vh;
+    font-size: 3.5vh;
+    text-align: center;
+}
+
+.discographie {
+    margin-top: 
+    20vh;
+}
+
+.album-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5vh;
+    max-width: 100%;
+    justify-items: center;
+    align-items: center;
+    margin-top: 6vh;
+    margin-bottom: 5vh;
+    min-height: 65vh;
+    padding: 4vw;
+}
+
+.album img {
+    width: 100%;
+    max-width: 30vw;
+    height: 30vw; /* Assure que les images soient carrées */
+    object-fit: cover;
+}
+
+.discographie img:hover {
+    transform: scale(1.1);
+}
+
+.album-gallery .album {
+    margin: 0;
+}
+
+.album p {
+    text-align: center;
+    font-size: 1.75vh;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media (min-width: 800px) {
+    .album-gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1279px) {
+    h4 {
+        font-size: 6vh;
+    }
+
+    .album-gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(15vw, 1fr));
+        gap: 5vh;
+        max-width: 100%;
+        justify-items: center;
+        align-items: center;
+        margin-top: 6vh;
+        margin-bottom: 5vh;
+        min-height: 65vh;
+    }
+
+    .album img {
+        width: 100%;
+        max-width: 15vw;
+        height: 15vw; /* Assure que les images soient carrées */
+        object-fit: cover;
+    }
+    
+}
+
+

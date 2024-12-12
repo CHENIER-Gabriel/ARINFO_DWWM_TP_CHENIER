@@ -1,0 +1,43 @@
+section h4{
+    font-family: 'Michroma', sans-serif;
+    margin-top:20vh;
+    margin-bottom: 5vh;
+    color:black;
+    text-align: center;
+    font-size: 6vh;
+}
+
+section h5 {
+    font-family: 'Michroma', sans-serif;
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+    color:black;
+}
+
+.red-text {
+    color: #FF5351
+}
+
+section li,section ul {
+    font-family: "abel", sans-serif;
+    text-decoration: none;
+    font-weight: 100;
+}
+
+.work-list {
+    padding-top: 5vh;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    padding-bottom: 5vh;
+}
+
+@media (min-width: 1270px) {
+    section li,section ul {
+        font-size: 2vh;
+    }
+
+    section h5 {
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
+}

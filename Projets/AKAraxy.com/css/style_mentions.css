@@ -1,0 +1,42 @@
+/* CSS de base pour mobile */
+body,
+html {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin-top:10vh;
+    padding: 0;
+    font-family: 'Michroma', sans-serif;
+    width: 100%;
+    /* Police de base */
+}
+
+h2 {
+    font-size: 3vh;
+}
+
+h3 {
+    font-size: 2.5vh;
+}
+
+h3, h2 {
+    display: flex;
+    justify-content: center;
+    margin: 5vh;
+}
+
+.mention1, .mention2, .mention3, .mention4, .mention5, .mention6, .mention7, .mention8 {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.mention8{
+    margin-bottom: 10vh;
+}
+
+li {
+    margin: 0;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    font-size: 1.vh;
+}

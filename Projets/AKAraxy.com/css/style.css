@@ -1,0 +1,1108 @@
+/* CSS de base pour mobile */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Michroma', sans-serif;
+    /* Police de base */
+}
+
+/* Styles de base pour les titres */
+h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 10vh;
+    /* Taille de police responsive basée sur la hauteur de la fenêtre */
+    text-decoration: none;
+    /* Supprime la décoration de texte */
+    font-weight: 300;
+    /* Légèreté de la police */
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 3vh;
+    /* Taille de police responsive */
+    text-decoration: none;
+    font-weight: 100;
+    /* Très légère */
+}
+
+h4 {
+    margin: 0;
+    padding: 0;
+    font-size: 4vh;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+h5 {
+    font-family: "abel", sans-serif;
+    /* Changement de police pour ce niveau de titre */
+    font-size: 3.5vh;
+    text-decoration: none;
+    font-weight: 100;
+}
+
+h6 {
+    font-family: "abel", sans-serif;
+    /* Changement de police pour ce niveau de titre */
+    font-size: 3vh;
+    text-decoration: none;
+    font-weight: 100;
+}
+
+p {
+    font-family: "abel", sans-serif;
+    /* Changement de police pour ce niveau de titre */
+    font-size: 3vh;
+    text-decoration: none;
+    font-weight: 100;
+}
+
+/* Header container */
+.containerHeader1 {
+    margin: 0;
+    padding-right: 0;
+    display: flex;
+    /* Utilisation de Flexbox pour l'alignement */
+    justify-content: space-between;
+    /* Espacement entre le logo et le menu burger */
+    align-items: center;
+    /* Aligner verticalement le logo et le menu burger */
+    height: 6vh;
+    /* Hauteur de la navbar à 8% de la hauteur de la page */
+    background-color: #FFFFFF;
+    /* Couleur de fond blanche pour le header */
+    position: fixed;
+    /* Fixe le header en haut de la page */
+    width: 100%;
+    /* Largeur totale */
+    top: 0;
+    /* Position en haut */
+    z-index: 4;
+    /* Par-dessus le reste du contenu */
+}
+
+/* Logo de la marque */
+.akaraxyBrand a img {
+    max-height: 4vh;
+    /* Hauteur du logo fixée à 60px */
+    margin-left: 5vw;
+    /* Marges pour le logo */
+    padding: 0;
+}
+
+/* Bouton Menu Burger */
+.burger-menu {
+    display: block;
+    /* Afficher le bouton burger sur les petits écrans */
+    cursor: pointer;
+    /* Curseur en forme de main */
+    opacity: 0.8;
+    /* Opacité de base */
+    transition: opacity 0.3s ease;
+    /* Transition de l'opacité */
+}
+
+/* Taille de l'icône de menu burger */
+.burger-menu img {
+    height: 80px;
+    /* Hauteur de l'icône de menu burger */
+    width: auto;
+    /* Maintenir le ratio de l'image */
+    margin-right: 2em;
+    /* Marges pour l'icône */
+    padding: 0;
+}
+
+/* Masquer le menu principal sur mobile */
+.hidden {
+    display: none;
+    /* Masqué par défaut sur mobile */
+}
+
+/* Masquer le menu principal sur mobile */
+.menu1 {
+    display: none;
+    /* Masqué par défaut sur mobile */
+}
+
+/* Style pour le bouton de fermeture */
+.close-menu {
+    width: 5em;
+    height: 5em;
+    position: absolute;
+    /* Positionnement absolu */
+    top: 5em;
+    /* Distance du haut */
+    right: 5em;
+    /* Distance du côté droit */
+    color: white;
+    /* Couleur du texte */
+    cursor: pointer;
+    /* Curseur en forme de main */
+    z-index: 3;
+    /* Assurez-vous qu'il est au-dessus des autres éléments */
+    display: flex;
+    /* Utiliser Flexbox pour centrer le texte */
+    align-items: center;
+    /* Centrer verticalement */
+    justify-content: center;
+    /* Centrer horizontalement */
+    background-color: #FFFFFF;
+    /* Fond blanc */
+    border-radius: 90px;
+    /* Bords arrondis */
+}
+
+/* Style pour le logo dans le menu burger */
+.burger-logo {
+    text-align: center;
+    /* Centre le logo */
+    margin: 0;
+    margin-left: 6em;
+    /* Espacement autour du logo */
+    padding: 0;
+}
+
+.burger-logo-img {
+    height: 5em;
+    /* Hauteur du logo */
+    width: auto;
+    /* Maintenir le ratio de l'image */
+}
+
+#contactBtn , #contactBtn2{
+    cursor: pointer; /* Change le curseur en une main avec un doigt pointé */
+}
+
+/* Afficher le menu burger lorsqu'il est actif */
+.menu1.active {
+    display: flex;
+    /* Afficher le menu en mode burger */
+    flex-direction: column;
+    /* Disposition verticale */
+    align-items: start;
+    /* Aligner les éléments à gauche */
+    justify-content: space-around;
+    /* Espacer les éléments verticalement */
+    position: fixed;
+    /* Fixe le menu */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    /* Prend toute la hauteur de l'écran */
+    background-color: rgba(0, 0, 0, 0.95);
+    /* Fond semi-transparent */
+    z-index: 4;
+    /* Par-dessus le contenu */
+}
+
+/* Style des éléments du menu burger */
+.menu1 ul {
+    min-height: 50vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    list-style-type: none;
+    /* Supprime les puces des listes */
+    padding: 0;
+    /* Supprime le padding */
+    margin: 0;
+    /* Supprime le margin */
+    margin-left: 10vw;
+    text-align: left;
+    /* Aligne le texte à gauche */
+}
+
+/* Style des liens dans le menu burger */
+.menu1 ul li a {
+    display: block;
+    /* Affiche les liens en blocs */
+    text-decoration: none;
+    /* Supprime la décoration (soulignement) */
+    color: white;
+    /* Couleur de base des liens */
+    padding: 0;
+    /* Espacement autour du texte */
+    transition: color 0.3s ease;
+    /* Transition pour le changement de couleur */
+    font-size: 3em;
+    /* Taille de police pour le texte du menu */
+}
+
+/* Changement de couleur au survol des liens */
+.menu1 ul li a:hover {
+    color: #FF5351;
+    /* Couleur au survol */
+}
+
+/* Icônes sociales dans le menu burger */
+.social-icons {
+    display: flex;
+    flex-flow: wrap;
+    /* Affichage en ligne des icônes */
+    /* Centre les icônes */
+    padding: 0;
+    margin: 0;
+    margin-left: 10vw;
+    width: fit-content;
+    gap: 1.5vh;
+    /* Espacement entre les icônes */
+}
+
+/* Style des icônes sociales dans le menu burger */
+.social-icons a img {
+    min-height: 6vh;
+    /* Taille des icônes */
+}
+
+/* Style des liens d'icônes sociales */
+.social-icons a {
+    display: inline-block;
+    /* Pour permettre la transformation */
+    transition: transform 0.3s ease;
+    /* Transition pour le changement de taille */
+}
+
+/* Effet de croissance au survol */
+.social-icons a:hover {
+    transform: scale(1.2);
+    /* Agrandir l'icône de 20% */
+    background-color: #FF5351;
+    /* Changement de couleur de fond */
+    border-radius: 90px;
+    /* Bords arrondis */
+}
+
+/* Effet de réduction au clic */
+.social-icons a:active {
+    transform: scale(0.8);
+    /* Rétrécir l'icône de 20% */
+    background-color: #FF5351;
+    /* Changement de couleur de fond */
+}
+
+/* BLOC 1 */
+.bloc1 {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    /* Prend toute la hauteur de la fenêtre */
+}
+
+.heropageAKA {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    /* Prend toute la hauteur de la fenêtre */
+}
+
+/* Style de fond avec image pour le premier bloc */
+.backgroundAKA {
+    display: flex;
+    background: url(../assets/images/INDEX/1920x990_HP.jpg) no-repeat;
+    /* Image de fond sans répétition */
+    background-position: 80%;
+    /* Ajustement de la position de l'image */
+    background-size: cover;
+    /* Couvre tout le bloc */
+    height: 100vh;
+    /* Hauteur totale de la fenêtre */
+    position: relative;
+    /* Position relative pour utiliser le z-index */
+    z-index: 1;
+    /* Niveau de profondeur de l'élément */
+}
+
+/* Couche de couverture pour l'image de fond */
+.coverbackgroundAKA {
+    height: 98.5vh;
+    position: absolute;
+    /* Positionnement absolu pour recouvrir le bloc */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Couleur noire avec opacité */
+    z-index: 2;
+    /* Plus élevé que l'image de fond */
+    margin: 0;
+}
+
+/* Contenu du premier bloc */
+.contentbloc1 {
+    position: relative;
+    /* Position relative pour utiliser le z-index */
+    z-index: 3;
+    /* Au-dessus de la couverture de fond */
+    color: white;
+    /* Couleur du texte */
+    text-align: center;
+    /* Centre le texte */
+    justify-content: space-between;
+    top: 65%;
+    /* Positionne verticalement au centre */
+    transform: translateY(-50%);
+    /* Ajuste la position verticale */
+    padding: 0;
+    margin: 0;
+}
+
+/* Style des titres dans le premier bloc */
+.contentbloc1 h1,
+.contentbloc1 h3 {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    /* Centre le texte horizontalement */
+}
+
+/* Conteneur pour les boutons du premier bloc */
+.boutonbloc1 {
+    display: flex;
+    flex-flow: row wrap;
+    /* Disposition en ligne avec retour à la ligne */
+    justify-content: center;
+    /* Centre les boutons */
+    gap: 4em;
+    /* Espacement entre les boutons */
+    margin-top: 4em;
+    /* Marge au-dessus des boutons */
+    padding: 0;
+}
+
+/* Style pour le premier bouton */
+.button1 {
+    display: flex;
+    cursor: pointer;
+    /* Curseur en forme de main */
+    margin: 0;
+    padding: 0.5em 1em;
+    /* Padding interne */
+    background-color: #FFFFFF;
+    /* Fond blanc */
+    color: #54595F;
+    /* Couleur du texte */
+    text-decoration: none;
+    /* Supprime la décoration de lien */
+    border: solid 0.2em white;
+    /* Bordure blanche */
+    border-radius: 90px;
+    /* Coins arrondis */
+    font-size: 2em;
+    /* Taille de police */
+    align-content: center;
+    /* Centre le contenu */
+}
+
+.button2 a {
+    min-width: 180px;
+    width: 10vw;
+}
+
+/* Style pour le deuxième bouton */
+.button2 {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-content: center;
+    /* Centre le contenu */
+}
+
+.button2 a {
+    min-width: 180px;
+    width: 10vw;
+    cursor: pointer;
+    margin: 0;
+    padding: 1vh 2vh;
+    background-color: transparent;
+    /* Fond transparent */
+    color: white;
+    /* Couleur du texte */
+    text-decoration: none;
+    /* Supprime la décoration de lien */
+    border: solid 0.2em white;
+    /* Bordure blanche */
+    border-radius: 90px;
+    /* Coins arrondis */
+    font-size: 2em;
+    /* Taille de police */
+    align-content: center;
+    /* Centre le contenu */
+}
+
+/* Effet de croissance au survol du premier bouton */
+.button1:hover {
+    transform: scale(1.1);
+    /* Agrandir le bouton de 10% */
+    background-color: transparent;
+    /* Fond transparent */
+    border-radius: 90px;
+    /* Coins arrondis */
+    color: #FFFFFF;
+    /* Couleur du texte */
+}
+
+/* Effet de croissance au survol du deuxième bouton */
+.button2:hover,
+.button2 a:hover {
+    transform: scale(1.1);
+    /* Agrandir le bouton de 10% */
+    background-color: #FFFFFF;
+    /* Changement de couleur de fond */
+    color: #54595F;
+    /* Changement de couleur de texte */
+    border-radius: 90px;
+    /* Coins arrondis */
+    border: none;
+    /* Supprimer la bordure */
+}
+
+.bloc2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 10vh;
+    padding-left: 15vw;
+    padding-right: 15vw;
+}
+
+.mediabloc2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+    padding: 0;
+}
+
+.bloc2 h3 {
+    margin: 0;
+    margin-top: 2.5vh;
+    margin-bottom: 5vh;
+    color: #FF5351;
+}
+
+.bloc2 h5 {
+    margin: 0;
+}
+
+.textcontent2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4vh;
+}
+
+.bloc3 {
+    padding-top: 10vh;
+    padding-left: 15vw;
+    padding-right: 15vw;
+}
+
+.bloc3 h5 {
+    margin: 0;
+}
+
+.bloc3 h4 {
+    margin-bottom: 10vh;
+    text-align: center;
+}
+
+.content3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4vh;
+}
+
+.textcontent3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4vh;
+}
+
+.video-bloc3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-bloc3 iframe {
+    height: 40vh;
+    width: 60vw;
+}
+
+.bloc4 {
+    padding-top: 10vh;
+    padding-left: 15vw;
+    padding-right: 15vw;
+}
+
+.bloc4 h4 {
+    text-align: center;
+    margin-bottom: 10vh;
+}
+
+.benefitsgrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+    gap: 8vh;
+    /* Espace entre les éléments */
+    justify-items: center;
+    /* Centrer les éléments horizontalement */
+}
+
+/* Limiter le nombre de colonnes à un maximum de 3 et un minimum de 1 */
+.benefitsgrid div {
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    /* Assure que les éléments prennent toute la largeur de la cellule */
+    border-radius: 2em;
+    box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.5);
+}
+
+.bloc5 {
+    padding-top: 10vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.bloc5 h4 {
+    text-align: center;
+    margin-bottom: 10vh;
+    margin-top: 10vh;
+}
+
+.bloc5 {
+    text-align: center;
+}
+
+.carousel {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    /* Boutons à gauche et à droite */
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    gap: 4vw;
+}
+
+.carousel-track {
+    display: flex;
+    /* Utiliser flex pour afficher les cartes en ligne */
+    overflow-x: auto;
+    /* Activer le défilement horizontal */
+    scroll-snap-type: x mandatory;
+    /* Défilement fluide */
+    padding-top: 5vh;
+    /* Enlever le padding pour éviter les espaces indésirables */
+    padding-bottom: 5vh;
+    /* Enlever le padding pour éviter les espaces indésirables */
+}
+
+.quote {
+    position: absolute;
+    /* Positionnement absolu pour placer l'image dans le coin supérieur gauche */
+    top: 0;
+    /* Positionné en haut */
+    left: 0;
+    /* Positionné à gauche */
+    z-index: 3;
+    /* Assure que l'image de citation est au-dessus d'autres éléments */
+    transform: translate(-50%, -50%);
+    /* Centre l'image sur le coin supérieur gauche */
+}
+
+.card {
+    background-color: #252525;
+    border-radius: 8px;
+    padding: 3vw;
+    text-align: left;
+    width: 15vw;
+    /* Limite la largeur de la carte à 50vw */
+    flex: 0 0 auto;
+    /* Permet aux cartes de ne pas se réduire */
+    scroll-snap-align: start;
+    /* Aligne les cartes au début lors du défilement */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    /* Nécessaire pour le positionnement absolu des citations */
+    margin: 2.5vw;
+    /* Marges entre les cartes */
+}
+
+.card1 {
+    display: flex;
+    /* Utiliser flex pour centrer la photo */
+    flex-direction: column;
+    /* Aligner verticalement */
+    align-items: center;
+    /* Centre horizontalement */
+    margin-top: 40px;
+    /* Ajustement pour éviter le chevauchement avec la quote */
+}
+
+.profilepic {
+    width: 100px;
+    /* Ajustez la taille de la photo si nécessaire */
+    height: 100px;
+    border-radius: 50%;
+    border: solid 5px white
+}
+
+.cardtitle {
+    margin-top: 5vh;
+    /* Espacement ajusté */
+}
+
+.cardtitle h5 {
+    margin: 0;
+    /* Supprimer la marge au-dessus de h6 pour réduire l'espacement */
+    font-size: 2vh;
+    color: #FFFFFF;
+}
+
+.cardtitle h6 {
+    margin-top: 0;
+    /* Supprimer la marge au-dessus de h6 pour réduire l'espacement */
+    font-size: 2vh;
+    color: #FFFFFF;
+}
+
+.card p {
+    margin-top: 0;
+    /* Supprimer la marge au-dessus de h6 pour réduire l'espacement */
+    font-size: 2vh;
+    color: #FFFFFF;
+}
+
+.carousel-track::-webkit-scrollbar {
+    display: none;
+    /* Cache la barre de défilement */
+}
+
+/* FOOTER */
+.footerContainer {
+    margin: 0;
+    padding: 2em;
+    /* Ajout d'un padding flexible */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #252525;
+    flex-wrap: wrap;
+    /* Permet l'adaptation en fonction de la taille de l'écran */
+}
+
+/* Conteneur pour chaque section du footer */
+.footerContainer1,
+.footerContainer2,
+.footerContainer3,
+.footerContainer4,
+.footerContainer5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1em 0;
+    padding: 0;
+    flex: 1 1 20%;
+    /* Taille flexible de chaque colonne */
+    min-width: 150px;
+    /* Largeur minimale pour chaque colonne */
+    box-sizing: border-box;
+    /* Inclure le padding dans la largeur */
+}
+
+.footerContainer1 p {
+    margin: 1vh;
+    font-size: 40px;
+    color: #252525;
+}
+
+.footerContainer p:hover {
+    color: #FFFFFF;
+}
+
+/* Style du logo */
+.akaraxybrandFooter img {
+    display: flex;
+    align-items: center;
+    margin: 1em;
+    padding: 0;
+    height: 25%;
+    max-width: 75%;
+}
+
+/* Style des éléments de menu */
+.footerContainer2 ul,
+.footerContainer3 ul,
+.footerContainer4 ul {
+    padding: 0;
+    margin: 0;
+}
+
+/* Style des éléments de liste */
+.footerContainer2 ul li,
+.footerContainer3 ul li,
+.footerContainer4 ul li {
+    list-style-type: none;
+    /* Supprime les puces des listes */
+    padding: 0;
+    /* Supprime le padding */
+    margin: 0;
+    /* Supprime le margin */
+    text-align: left;
+    /* Aligne le texte à gauche */
+}
+
+/* Style des liens dans les listes */
+.footerContainer2 ul li a,
+.footerContainer3 ul li a,
+.footerContainer4 ul li a {
+    display: block;
+    /* Affiche les liens en blocs */
+    text-decoration: none;
+    /* Supprime la décoration (soulignement) */
+    color: white;
+    /* Couleur de base des liens */
+    padding: 0.5em 0;
+    /* Espacement autour du texte */
+    transition: color 0.3s ease;
+    /* Transition pour le changement de couleur */
+    font-size: 1em;
+    /* Taille de police pour le texte du menu */
+}
+
+.footerContainer2 ul li a:hover,
+.footerContainer3 ul li a:hover,
+.footerContainer4 ul li a:hover {
+    color: #FF5351;
+    /* Couleur au survol */
+}
+
+/* Style des titres */
+.footerContainer5 h3 {
+    padding: 0;
+    margin: 0.5em;
+    color: white;
+    font-size: 2em;
+}
+
+.footerContainer5 a {
+    padding: 0.75em;
+    margin: 0.5em;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    border: #FF5351 solid 1px;
+    border-radius: 90px;
+    background-color: #FF5351;
+}
+
+.footerContainer1 img,
+.footerContainer5 a {
+    display: inline-block;
+    /* Pour permettre la transformation */
+}
+
+.footerContainer1 img:hover,
+.footerContainer5 a:hover {
+    transform: scale(1.2);
+    /* Agrandir l'icône de 20% */
+}
+
+/* Effet de réduction au clic */
+.social-icons2 a:active {
+    transform: scale(0.8);
+    /* Rétrécir l'icône de 20% */
+}
+
+
+@media (max-width: 1270px) {
+    .containerHeader1 {
+        height: 8vh;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+    }
+}
+
+@media (min-width: 1280px) {
+
+    /*MENU */
+    .containerHeader1 {
+        display: none;
+        /* Masquer la section pour les écrans de moins de 1080px */
+    }
+
+    .menuDesktop {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        /* Utilisation de Flexbox pour l'alignement */
+        justify-content: space-between;
+        /* Espacement entre le logo et le menu */
+        align-items: center;
+        /* Aligner verticalement le logo et le menu */
+        height: 8vh;
+        /* Hauteur de la navbar à 8% de la hauteur de la page */
+        background-color: #FFFFFF;
+        /* Couleur de fond blanche pour le header */
+        position: fixed;
+        /* Fixe le header en haut de la page */
+        width: 100%;
+        /* Largeur totale */
+        top: 0;
+        /* Position en haut */
+        z-index: 1000;
+        /* Par-dessus le reste du contenu */
+    }
+
+    /* Logo de la marque */
+    .akaraxyBrand a img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        /* Hauteur du logo fixée à 30px */
+        margin: 0;
+        padding: 0;
+        margin-left: 1em;
+    }
+
+    .menuDesktop ul {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        /* Supprime les puces des listes */
+        padding: 0;
+        /* Supprime le padding */
+        margin: 0;
+        /* Supprime le margin */
+        margin-left: 3em;
+        text-align: left;
+        /* Aligne le texte à gauche */
+        gap: 2em;
+    }
+
+    .menuDesktop ul li a {
+        display: flex;
+        text-decoration: none;
+        /* Supprime la décoration (soulignement) */
+        color: #54595F;
+        /* Couleur de base des liens */
+        padding: 0em;
+        /* Espacement autour du texte */
+        transition: color 0.3s ease;
+        /* Transition pour le changement de couleur */
+        font-size: 1em;
+        /* Taille de police pour le texte du menu */
+    }
+
+    /* Changement de couleur au survol des liens */
+    .menuDesktop ul li a:hover {
+        color: #FF5351;
+        /* Couleur au survol */
+    }
+
+    .coverbackgroundAKA {
+        height: 100vh;
+        width: 40vw;
+        position: absolute;
+        /* Positionnement absolu pour recouvrir le bloc */
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        /* Couleur noire avec opacité */
+        z-index: 2;
+        /* Plus élevé que l'image de fond */
+    }
+
+    .button1 {
+        border: solid 0.1em white;
+        /* Bordure blanche */
+    }
+
+    .button2 a {
+        border: solid 0.1em white;
+        /* Bordure blanche */
+    }
+
+    .contentbloc1 {
+        position: relative;
+        /* Position relative pour utiliser le z-index */
+        z-index: 3;
+        /* Au-dessus de la couverture de fond */
+        color: white;
+        /* Couleur du texte */
+        text-align: center;
+        /* Centre le texte */
+        justify-content: space-between;
+        top: 55%;
+        /* Positionne verticalement au centre */
+        transform: translateY(-50%);
+        /* Ajuste la position verticale */
+        padding: 0;
+        margin: 0;
+    }
+
+    .content2 {
+        margin-left: 5vw;
+    }
+
+    .bloc3 {
+        padding-top: 10vh;
+        padding-left: 15vw;
+        padding-right: 15vw;
+    }
+
+    .video-bloc3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .video-bloc3 iframe {
+        height: 35vh;
+        width: 30vw;
+    }
+
+    .content3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .benefitsgrid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* Fixe à 3 colonnes de taille égale */
+    }
+
+    .social-icons2 {
+        display: flex;
+        /* Affichage en ligne des icônes */
+        justify-content: center;
+        /* Centre les icônes */
+        padding: 0;
+        margin: 0;
+        margin-left: auto;
+        /* Pousse le conteneur à droite */
+        margin-right: 1em;
+        gap: 1em;
+        /* Espacement entre les icônes */
+    }
+
+    /* Style des icônes sociales dans le menu */
+    .social-icons2 a img {
+        height: 5vh;
+        /* Taille des icônes */
+    }
+
+    /* Style des liens d'icônes sociales */
+    .social-icons2 a {
+        display: inline-block;
+        /* Pour permettre la transformation */
+        transition: transform 0.3s ease;
+        /* Transition pour le changement de taille */
+    }
+
+    /* Effet de croissance au survol */
+    .social-icons2 a:hover {
+        transform: scale(1.2);
+        /* Agrandir l'icône de 20% */
+        background-color: #FF5351;
+        /* Changement de couleur de fond */
+        border-radius: 90px;
+        /* Bords arrondis */
+    }
+
+    /* Effet de réduction au clic */
+    .social-icons2 a:active {
+        transform: scale(0.8);
+        /* Rétrécir l'icône de 20% */
+        background-color: #FF5351;
+        /* Changement de couleur de fond */
+    }
+}
+
+@media (max-width: 1279px) {
+
+    .menuDesktop {
+        display: none;
+        /* Masquer la section pour les écrans de moins de 1080px */
+    }
+
+    .backgroundAKA {
+        height: 98.5vh;
+    }
+
+    .bloc2 {
+        display: flex;
+    }
+
+    .mediabloc2 {
+        display: none;
+        /* Masquer la section pour les écrans de moins de 1080px */
+    }
+
+    .bannerbloc2 {
+        display: none;
+        /* Masquer la section pour les écrans de moins de 1080px */
+    }
+
+    .imgbloc2 {
+        display: none;
+        /* Masquer la section pour les écrans de moins de 1080px */
+    }
+
+    .footerContainer2 {
+        display: none;
+        /* Masquer la section pour les écrans de moins de 1080px */
+    }
+
+    .footerContainer3 {
+        display: none;
+        /* Masquer la section pour les écrans de moins de 1080px */
+    }
+
+    .card {
+        width: 400px;
+    }
+
+    h5 {
+        font-size: 2vh;
+    }
+
+    h6 {
+        font-size: 3vh;
+    }
+
+    p{
+        font-size: 1.8vh;
+    }
+
+    h4 {
+        font-size: 2.5vh
+    }
+
+    h6 {
+        margin-top: 2.5vh;
+        margin-bottom: 2.5vh;
+    }
+}
+

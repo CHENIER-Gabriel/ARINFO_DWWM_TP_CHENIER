@@ -1,0 +1,78 @@
+/* Navbar Desktop */
+.navbar-desktop {
+    display: flex;
+}
+
+.navbar-mobile {
+    display: none;
+}
+
+.navbar-mobile.hidden {
+    display: none;
+}
+
+.logo img {
+    width: 180px;
+}
+
+.menu-burger img {
+    height: 50px;
+}
+
+.menu-items li {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.menu-items li { 
+    list-style: none;
+}
+
+.menu-items a {
+    color: #fff;
+    text-decoration: none;
+    font-size: x-large;
+}
+
+.modal-content .social-icons-mobile a img {
+    width: 50px; /* Ajustez selon vos besoins */
+    height: 50px;
+}
+
+/* Nouveau point de rupture à 1024px */
+@media (max-width: 1024px) {
+    .navbar-desktop {
+        display: none;
+    }
+    .navbar-mobile {
+        display: flex;
+    }
+}
+
+/* Point de rupture pour les écrans larges */
+@media (min-width: 1024px) {
+    /*HEADER*/
+    .navbar-desktop {
+        height: 7vh;
+    }
+    
+    .navbar-desktop a {
+        color: #6d6d6d;
+        text-decoration: none;
+        font-size: medium;
+    }
+
+    .social-icons-desktop img {
+        height: 30px;
+    }
+
+    .navbar-desktop a:hover {
+        color:#FF5351;
+    }
+
+    .social-icons-desktop a:hover {
+        transform: scale(1.2);
+        background-color: #FF5351;
+        border-radius: 90px;
+    }
+}

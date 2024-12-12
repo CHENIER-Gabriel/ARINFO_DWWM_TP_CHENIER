@@ -1,0 +1,218 @@
+/* FOOTER */
+.footerContainer {
+    margin: 0;
+    padding: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #252525;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+/* Conteneur pour chaque section du footer */
+.footerContainer1,
+.footerContainer2,
+.footerContainer3,
+.footerContainer4,
+.footerContainer5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1em 0;
+    padding: 0;
+    flex: 1 1 20%; /* Flexibilité de chaque colonne */
+    min-width: 150px; /* Largeur minimale */
+    box-sizing: border-box; /* Inclure le padding dans la largeur */
+}
+
+/* Style du logo */
+.footerContainer1 img {
+    display: flex;
+    align-items: center;
+    height: 25%;
+    max-width: 75%;
+    margin: 1.5em;
+}
+
+.footerContainer1 a {
+    display: flex;
+    justify-content: center;
+}
+
+/* Style des éléments de menu */
+.footerContainer2 ul,
+.footerContainer3 ul,
+.footerContainer4 ul {
+    padding: 0;
+    margin: 0;
+}
+
+/* Style des éléments de liste */
+.footerContainer2 ul li,
+.footerContainer3 ul li,
+.footerContainer4 ul li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+/* Style des liens dans les listes */
+.footerContainer2 ul li a,
+.footerContainer3 ul li a,
+.footerContainer4 ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 0.5em 0;
+    transition: color 0.3s ease;
+    font-size: 1em;
+}
+
+.footerContainer2 ul li a:hover,
+.footerContainer3 ul li a:hover,
+.footerContainer4 ul li a:hover {
+    color: #FF5351;
+}
+
+/* Style des titres */
+.footerContainer5 h3 {
+    padding: 0;
+    margin: 0.5em;
+    color: white;
+    font-size: 2em;
+}
+
+.footerContainer5 a {
+    padding: 0.75em;
+    margin: 0.5em;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    border: #FF5351 solid 1px;
+    border-radius: 90px;
+    background-color: #FF5351;
+}
+
+/* Effets de transformation au survol */
+.footerContainer1 img:hover,
+.footerContainer5 a:hover {
+    transform: scale(1.2);
+}
+
+.social-icons2 a:active {
+    transform: scale(0.8);
+}
+
+/* Styles des icônes sociales dans le menu */
+.social-icons2 {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+    margin-right: 1em;
+    gap: 1em;
+}
+
+.social-icons2 a img {
+    height: 5vh;
+}
+
+.social-icons2 a {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.social-icons2 a:hover {
+    transform: scale(1.2);
+    background-color: #FF5351;
+    border-radius: 90px;
+}
+
+.social-icons2 a:active {
+    transform: scale(0.8);
+    background-color: #FF5351;
+}
+
+.footerContainer1 a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Ajout du bloc Mentions Légales */
+.footerContainerLegal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width: 100%;
+    background-color: black;
+}
+
+.footerContainerLegal a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.9em;
+    margin: 0 1em;
+    transition: color 0.3s ease;
+}
+
+.footerContainerLegal a:hover {
+    color: #FF5351;
+}
+/* Responsive: Masquer certaines sections sur les écrans plus petits */
+@media (max-width: 1024px) {
+    .footerContainer2,
+    .footerContainer3 {
+        display: none;
+    }
+
+    .footerContainer {
+        padding: 1em;
+        /* Ajuste le padding sur des petits écrans */
+    }
+
+    .footerContainer1,
+    .footerContainer4,
+    .footerContainer5 {
+        flex: 1 1 100%;
+        /* Chaque section prend toute la largeur sur les écrans plus petits */
+    }
+
+    .footerContainer1 img {
+        max-width: 50%;
+        /* Réduire la taille du logo */
+    }
+
+    .footerContainer2 ul li a,
+    .footerContainer3 ul li a,
+    .footerContainer4 ul li a {
+        font-size: 0.9em;
+        /* Réduire la taille de la police pour les petits écrans */
+        padding: 0.4em 0;
+    }
+
+    .footerContainer5 a {
+        font-size: 1.2em;
+        padding: 0.6em;
+        /* Ajuste le bouton "Hire Me" pour les petits écrans */
+    }
+
+    .social-icons2 {
+        gap: 0.8em;
+        /* Espacement plus petit entre les icônes sur les petits écrans */
+    }
+
+    .social-icons2 a img {
+        height: 4vh;
+        /* Réduire la taille des icônes sociales */
+    }
+}
